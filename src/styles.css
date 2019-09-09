@@ -1,0 +1,219 @@
+body{
+    background-color: black;
+}
+
+#container{
+    height: 55vw;
+}
+
+#meters{
+    color: white;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 55px;
+}
+
+ #power{
+     top: 26vw;
+     position: absolute;
+     width: 98%;
+     height: 5vw;
+     background-color: #ddd;
+     left: 1%;
+ }
+
+ #btnStart{
+     position: absolute;
+     width: 40%;
+     height: 5vw;
+     background-color: green;
+     border-radius: 12px;
+     color: white;
+     font-size: 2vw;
+     top: 35vw;
+     right: 30%;
+ }
+
+ #btnStop{
+     position: absolute;
+     width: 40%;
+     height: 5vw;
+     background-color: red;
+     border-radius: 12px;
+     color: white;
+     font-size: 2vw;
+     top: 35vw;
+     right: 30%;
+ }
+
+#btnNext{
+    position: absolute;
+    width: 40%;
+    height: 5vw;
+    background-color: green;
+    border-radius: 12px;
+    color: white;
+    font-size: 2vw;
+    top: 35vw;
+    right: 30%;
+}
+
+#btnAgain{
+    position: absolute;
+    width: 40%;
+    height: 5vw;
+    background-color: red;
+    border-radius: 12px;
+    color: white;
+    font-size: 2vw;
+    top: 35vw;
+    right: 30%;
+}
+
+#btnLU{
+    position: absolute;
+    top: 35vw;
+    right: 30%;
+    height: 5vw;
+    width: 40%;
+    background-color: #50b960;
+    font-size: 2vw;
+    border-radius: 12px;
+    color: white;
+}
+
+#btnRetry{
+    position: absolute;
+    top: 35vw;
+    right: 30%;
+    height: 5vw;
+    width: 40%;
+    background-color: #50b960;
+    font-size: 2vw;
+    border-radius: 12px;
+    color: white;
+}
+
+ #percent{
+     position: relative;
+     top: -11vw;
+     left: 48%;
+     width: 5vw;
+     height: 5vw;
+     color: white;
+     text-align: center;
+     font-size: 2vw;
+ }
+
+#miss{
+    position: relative;
+    top: 0vw;
+    left: 88%;
+    width: 5vw;
+    height: 5vw;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+}
+
+meter::-webkit-meter-optimum-value {
+    animation: animate-stripes 5s linear infinite;
+    background: dodgerblue linear-gradient(
+            135deg,
+            transparent,
+            transparent 3%,
+            rgba(181, 43, 54, 0.1) 100%,
+            /*rgba(0, 0, 0, 0.1) 66%,*/
+            transparent 66%
+    );
+    background-size: 1vw 1vw;
+}
+
+meter::-webkit-meter-bar {
+    /* Let's animate this */
+    animation: animate-stripes 5s linear infinite;
+    background: #3333ff
+            linear-gradient(
+                    135deg,
+                    transparent,
+                    transparent 3%,
+                    rgba(181, 43, 54, 0.1) 100%,
+                    /*rgba(0, 0, 0, 0.1) 66%,*/
+                    transparent 66%
+            );
+    background-size: 1vw 1vw;
+}
+
+@keyframes animate-stripes {
+    to {
+        background-position: -50px 0;
+    }
+}
+
+#box{
+    position: relative;
+    background-color: red;
+    opacity: .5;
+    width: 30%;
+    height: 5vw;
+    top: -27.45vw;
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+}
+
+#goals{
+    color: white;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    position: relative;
+    top: -125px;
+}
+
+#level{
+    color: white;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    position: relative;
+    top: -7vw;
+}
+
+#circles{
+    position: relative;
+    left: 41%;
+    fill: white;
+    text-align: center;
+    top: -11vw;
+}
+
+#check{
+    position: absolute;
+    left: 29.25%;
+    bottom: 12%;
+    visibility: hidden;
+}
+
+#redX{
+    position: absolute;
+    left: 29.25%;
+    bottom: 12%;
+    visibility: hidden;
+}
+
+#loser{
+    position: relative;
+    color: transparent;
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    text-align: center;
+    top: -165px;
+}
+
+#winner{
+    position: relative;
+    color: transparent;
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    top: -165px;
+}

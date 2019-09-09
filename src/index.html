@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Meters</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="container">
+        <h1 id="meters">Meters</h1><br>
+        <h2 id="level">Level 1</h2>
+        <h2 id="goals">Hit between the lines 3 times in a row</h2>
+        <svg id="circles" height="50" width="50">
+            <circle id="circ1" cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="white" />
+        </svg>
+        <svg id="circles" height="50" width="50">
+            <circle id="circ2" cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="white" />
+        </svg>
+        <svg id="circles" height="50" width="50">
+            <circle id="circ3" cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="white" />
+        </svg>
+        <br>
+        <meter id="power" value=".01" max="100" min=".01"></meter>
+        <button id="btnStart" type="button" onclick="startPower();">Start</button>
+        <button id="btnStop" type="button" style="visibility: hidden" onclick="stopPower();">Stop</button>
+        <button id="btnNext" type="button" style="visibility: hidden" onclick="next();">Next</button>
+        <button id="btnAgain" type="button" style="visibility: hidden" onclick="next();">Again</button>
+        <button id="btnLU" type="button" style="visibility: hidden" onclick=";">Next Level</button>
+        <button id="btnRetry" type="button" style="visibility: hidden" onclick="gameLost()">Retry</button>
+        <h2 id="percent">0%</h2>
+        <h2 id="miss">Misses: 3 left</h2>
+        <div id="box"></div>
+    <div id="winner"><h2>Level Up</h2></div>
+    <div id="loser"><h2>You Lose</h2></div>
+    <div id="check"><img src="metFolder/check.png" style="height: 500px; width: 500px;"></div>
+    <div id="redX"><img src="metFolder/redX.png" style="height: 500px; width: 500px;"></div>
+</div>
+<audio src="metFolder/music.m4a" autoplay loop="true">
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
